@@ -1,0 +1,121 @@
+
+@import url('https://fonts.google.com/specimen/Open+Sans');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;    
+    color: whitesmoke;
+    
+    
+    
+}
+
+.total{
+background: url(./imagens/universo1.gif);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-content: space-evenly;
+font-size: 25px;
+
+
+}
+
+.texto{
+width: 80%;
+height: 200px;
+display: flex;
+font-size: 25px;
+text-align: center;
+align-items: center;
+justify-items: center;
+background-color: rgba(0, 0, 0, 0.37);
+margin-left: 100px;
+margin-top: 08px;
+border-radius: 10px;
+
+
+}
+
+.txt{
+  
+    text-align: center;  
+    
+}
+
+
+.data{
+   font-family: var(--input-date);
+   text-align: center;
+   display: flex;
+   flex-direction: column;   
+   align-items: center;
+   margin-top: 10px;
+   
+   
+}
+
+#data{
+    color: black;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.botao{
+    width: 80px;
+    height: 30px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-top: 10px;
+    
+}
+
+.resultado{
+    height: 500px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction:row;     
+    align-items: center;  
+    margin-left: 100px;
+    margin-top: 10px;
+    
+
+}
+
+.titulo{
+    height: 50px;
+    width: 40px;
+}
+
+.imgdia{
+    border: solid 2px black;
+    width: 600px;
+    height: 300px;
+    margin-right: 200px;
+    
+}
+
+.descricao{
+    border: solid 2px black;
+    width: 600px;
+    height:300px;
+    margin-right: 30px;
+}
+
+#video{
+    display: none;
+}
+
+.rodape{
+    color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    border-style:hidden;
+
+    
+}
