@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,54 @@
     <title>Imagem do dia</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="total">  
-       
+    <div class="total">
+
 
         <div class="texto">
             <h1> Imagem astronômica do dia </h1>
-            
-        <p class="txt"> Você sabia que o universo observável tem cerca de 200 bilhões de galáxias? O universo é incrível não é mesmo e você pode ter acesso a uma parte dele hoje! <br>
+
+            <p class="txt"> Você sabia que o universo observável tem cerca de 200 bilhões de galáxias? O universo é
+                incrível não é mesmo e você pode ter acesso a uma parte dele hoje! <br>
             </p>
-        </div>    
+        </div>
 
         <div class="data">
 
-            <label for="selecione"> Selecione uma data e obtenha uma imagem do universo com uma breve  explicação: </label>
-            <input type="date" id="data" name="dia" min="1995-06-20">           
+            <label for="selecione"> Selecione uma data e obtenha uma imagem do universo com uma breve explicação:
+            </label>
+            <input type="date" id="data" name="dia" min="1995-06-20">
             <button class="botao" id="btn"> Acessar </button>
 
 
         </div>
 
         <div class="resultado">
-            <h3 class="titulo"> </h3>                 
-            <div id="imagemDia" class="imgdia" src=""></div>
-            <iframe id="video" src=""> </iframe>
-            <p class="descricao"></p>   
-        </div> 
+            <h3 class="titulo"> </h3>
+            <div class="container">
+                <div id="imagemDia" class="imgdia"></div>
+                <iframe src="" id="video" frameborder="0"></iframe>
+                <p class="descricao"></p>
+            </div>
 
-       
+        </div>
+
+
 
     </div>
 
-  
-    
-<footer class="rodape">
 
-     Desenvolvido por  Annanda Santos ® 
-</footer>
 
-    
+    <footer class="rodape">
+
+        Desenvolvido por Annanda Santos ®
+    </footer>
+
+
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script> 
-    
+    <script src="./script.js"></script>
+
 </body>
+
 </html>

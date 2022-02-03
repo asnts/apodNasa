@@ -1,31 +1,33 @@
-$('#btn').click(function (event) {
-    event.preventDefault();
-    escolherData();
-});
 
-function escolherData() {
 
-  $('#btn').on ("click", function(){      
+  $('#btn').click(function(event){   
+      event.preventDefault()   
     const data = $("#data").val(); 
+    
      
 
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=tG7LS6QnaFH8fcSsXGcVM2UYe13iP3TpvybAy6kr&date=${data}`,
 
-        sucess: function(response){
+        success: function(response){
+            
             $(".resultado").css("display", "block");
+            $("#video").css("display", "none")
             $(".titulo").text(`${response.title}`); // titulo da imagem
             $(".titulo").css ("color", "whitesmoke");    
             $("#data").text(`${response.date}`); // data selecionada
 
             if (response.media_type == "image"){
-                $(".imgdia").attr (`<img src=""${response.hdurl}`);
+                $(".imgdia").css ('background-image', `url(${response.url})`);
                 $(".imgdia").css ("display", "block");
             } else {
-                $(".imgdia").html(`<iframe" src="${response.url}?autoplay=1&mute=1"></iframe>`);
+                $(".imgdia").css("display", "none")
+                $("#video").css("display", "block")
+                $("#video").attr("src", response.url);
+
             }
-            $(".descricao").text(`${response.descricao}`); //Data section imagem-dia
-            $(".descricao").css("display", "none");
+            $(".descricao").text(`${response.explanation}`); //Data section imagem-dia
+            $(".descricao").css("display", "block");
 
         },
 
@@ -37,7 +39,7 @@ function escolherData() {
         }
     });
   });
-} 
+ 
 
-escolherData();
+
 
