@@ -1,10 +1,14 @@
 
-@import url('https://fonts.google.com/specimen/Open+Sans');
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;    
     color: whitesmoke;
+    @font-face {
+        font-family: 'NotoSans';
+        src: url('NotoSans-Bolditalic.ttf') format('truetype');
+      }
     
     
     
@@ -20,29 +24,39 @@ display: flex;
 flex-direction: column;
 align-content: space-evenly;
 font-size: 25px;
-
+font-family: 'NotoSans', Arial, sans-serif;
 
 }
 
+
+.cabecalho{
+    font-style: italic;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.title{
+color:  ;
+ 
+}
+
+
 .texto{
 width: 80%;
-height: 200px;
-display: flex;
+height: 150px;
 font-size: 25px;
-text-align: center;
 align-items: center;
 justify-items: center;
 background-color: rgba(0, 0, 0, 0.37);
 margin-left: 100px;
-margin-top: 08px;
 border-radius: 10px;
-
-
 }
 
-.txt{
-  
-    text-align: center;  
+.txt{  
+    text-align: center;   
     
 }
 
@@ -51,10 +65,9 @@ border-radius: 10px;
    font-family: var(--input-date);
    text-align: center;
    display: flex;
-   flex-direction: column;   
+   flex-direction: column ;   
    align-items: center;
-   margin-top: 10px;
-   
+   justify-items: center;  
    
 }
 
@@ -65,11 +78,12 @@ border-radius: 10px;
 }
 
 .botao{
-    width: 80px;
+    width: 90px;
     height: 30px;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.65);    
     margin-top: 10px;
+    
     
 }
 
@@ -81,7 +95,8 @@ border-radius: 10px;
     flex-direction:row;     
     align-items: center;  
     margin-left: 100px;
-    margin-top: 10px;
+    border-radius: 10px; 
+    margin-top: 10px;      
 
 }
 
@@ -100,7 +115,7 @@ border-radius: 10px;
 
 .imgdia{
     width: 48%;
-    height: 500px;
+    height: 480px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,6 +127,7 @@ border-radius: 10px;
     width: 48%;
     height:auto;
     align-items: center;
+    margin-bottom: 20px;    
     
 }
 
@@ -123,10 +139,13 @@ border-radius: 10px;
 
 .rodape{
     color:whitesmoke;
-    font-size: 18px;
+    font-family: 'NotoSans', Arial, sans-serif;
+    height: 20px;
+    font-size: 15px;
     text-align: center;
     background-color: rgb(7, 7, 7);
-    border-style:hidden;
+    position: relative;
+   
 
     
 }
